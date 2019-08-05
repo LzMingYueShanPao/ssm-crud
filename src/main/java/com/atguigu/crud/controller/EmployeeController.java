@@ -52,6 +52,7 @@ public class EmployeeController {
 	@RequestMapping(value = "/emp/{empId}",method = RequestMethod.PUT)
 	@ResponseBody
 	public Msg saveEmp(Employee employee) {
+		System.out.println("aaaaa");
 		employeeService.updateEmp(employee);
 		return Msg.success();
 	}
